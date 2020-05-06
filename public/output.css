@@ -1,0 +1,92 @@
+/*   Form costumized  --din */
+.label-password{
+    width: 100%;
+    height: 2.5rem;
+    border-bottom: 1px black solid;
+    pointer-events: none;
+  }
+  .label-email{
+    width: 100%;
+    height: 2.5rem;
+    border-bottom: 1px black solid;
+    pointer-events: none;
+  }
+  .form input {
+    margin-bottom: 10px;
+  }
+  
+  
+  .label-email::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+    border-bottom: 3px solid rgb(8,0,89);
+    transform: translateX(-100%);
+    left: 0px;
+    bottom: -1%;
+    transition: all 0.3s ease;
+  }
+  .label-password::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+    border-bottom: 3px solid rgb(8,0,89);
+    left: 0px;
+    bottom: -1%;
+    transform: translateX(-100%);
+    transition: transform ease 0.3s;
+  }
+  .content-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+  }
+  .form {
+    overflow: hidden;
+  }
+  
+  .form input:focus + .label-email .content-name,
+  .form input:valid + .label-email .content-name{
+     transform: translateY(-150%);
+     font-size: 10px;
+     color: gray;
+  }
+  .form input:focus + .label-password .content-name,
+  .form input:valid + .label-password .content-name{
+     transform: translateY(-150%);
+     font-size: 10px;
+     color: gray;
+  }
+  
+   .form input:focus + .label-email::after,
+   .form input:valid + .label-email::after{
+   transform: translateX(0%);
+   
+  }
+  .form input:focus + .label-password::after,
+   .form input:valid + .label-password::after{
+   transform: translateX(0%);
+  }
+
+  @font-face {
+    font-family: "Mark-bold";
+    src: url('../fonts/Mark\ Pro\ Bold.ttf');
+  }
+  @font-face {
+    font-family: "Mark-pro";
+    src: url('../fonts/Mark\ Pro.ttf');
+  }
+  .forms {
+    font-family: Mark-pro ;
+  }
+
+  h2{
+     font-family: Mark-bold ;
+  }
+  .login-btn {
+    background-color: #FF4362;
+  }
+

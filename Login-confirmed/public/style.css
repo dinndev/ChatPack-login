@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Mark Bold";
+    src: url(../fonts/Mark\ Pro\ Bold.ttf);
+}
+
+@font-face {
+    font-family: "Mark Pro";
+    src: url(../fonts/Mark\ Pro.ttf);
+}
+
+form input {
+    font-family: "Mark Bold";
+}
+body {
+    font-family: "Mark Pro";
+}
+.submitBtn {
+    background-color:  #575a87;
+}
+span.hr {
+    color: #575a87;
+}
+i.fa-facebook-square{
+    color: #3b5998;
+}
+
+i.fa-google-plus-g{
+   color: #db4a39;
+}
+
+
+

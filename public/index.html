@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <title>Login</title>
+</head>
+<body class="bg-pink-100">
+    <!-- Login -->
+    <div class="forms grid grid-cols-1 min-h-screen sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+       <div class="flex flex-col justify-center items-center col-span-1 ">
+        <h2 class="text-2xl sm:text-3xl md:text-3xl lg:text-3xl">Log in to your account!</h2>
+        <!-- Form -->
+        <div class="w-full max-w-lg py-20 px-10">
+            <form class="flex flex-col sm:p-10 md:p-12">
+                <!-- Email -->
+                <div class="flex flex-col form relative">
+                    <input autocomplete="off" class="outline-none form-input appearance-none border-none focus:outline-none bg-transparent text-gray-700 text-xs h-10" type="email" id="email" required>
+                    <label class="absolute label-email text-xs" for="email">
+                        <span class="content-name">Email</span>
+                    </label>
+                    </div>
+              <!-- Password -->
+                <div class="flex flex-col form relative">
+                    <input autocomplete="off" class="outline-none form-input appearance-none border-none focus:outline-none bg-transparent text-gray-700 text-xs h-10" type="password" id="password" required>
+                <label class="absolute label-password text-xs" for="password">
+                    <span class="content-name">Password</span>
+                </label>
+                </div>
+                  <!-- checkbox form  , forget password link-->
+                <div class="mb-4 flex justify-between items-center ">
+                    <label class="bg-red-100 block font-bold text-gray-500">
+                        <input class="leading-tight" type="checkbox">
+                        <span class="text-xs">Remember me</span>
+                       </label>
+                       <a class=" inline-block text-gray-500 font-bold text-xs" href="#">Forgot password?</a>
+                </div>
+                   <!-- Login button -->
+                   <button class="login-btn font-bold py-2 w-40 rounded-lg text-white" type="submit">Login</button>
+                   <!-- Sign up -->
+                   <div class="flex">
+                    <span class="text-gray-500 font-bold text-xs py-4" href="#">Dont have an account?</span>
+                    <a class=" font-bold text-xs py-4 px-2" href="#">Sign up</a>
+                   </div>
+               </form>
+        </div>
+       </div>
+       <!-- Svg -->
+    <div class="bg-pink-200 flex justify-center hidden items-center col-span-1 sm:hidden md:flex lg:flex">
+        <img src="../svg/chat.svg" alt="">
+    </div>
+    </div>
+</body>
+</html>
