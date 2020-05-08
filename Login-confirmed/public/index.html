@@ -10,19 +10,18 @@
 </head>
 <body>
     <!-- grid -->
-    <!-- col 1 -->
-     <div class="grid grid-cols-2 w-screen h-screen">
-         <!-- navBar -->
-    <div class="flex h-screen col-span-1 h-12 bg-blue-200 justify-between">
-        <img class="logo" src="" alt="chatPack logo">
+     <div class="grid bg-no-repeat bg-left grid-cols-2 w-screen h-screen" style="background-image: url(../svg/layer.svg);">
+         <!-- col 1 -->
+    <div class="flex justify-center h-screen col-span-1 h-12 items-center">
+        <img class="w-10/12" src="../svg/Man.svg" alt="">
     </div>
     <!-- col 2 -->
-         <div class=" col-span-1">
+         <div class="col-span-1">
              <!-- form-container -->
              <div class="h-full flex flex-col justify-center items-center">
                  <!-- form -->
              <form class=" w-3/4 mx-w-lg p-10 relative flex flex-col justify-center">
-                <div class="flex w-full flex-col">
+                <div class="inputs flex w-full flex-col">
                     <label for="email"></label>
                 <input class="font-bold text-sm focus:outline-none focus:shadow-outline p-5 rounded-lg m-2" placeholder="Email Adress" name="email" type="email" required>
                  <label for="password"></label>
@@ -39,7 +38,7 @@
                 </div>
                 <!-- Submit btn -->
                 <div class="flex justify-center">
-                <button class=" submitBtn rounded-lg bg-blue-800 text-white py-3 px-20 shadow-lg" type="submit">Login</button>
+                <button class="focus:outline-none focus:shadow-outline submitBtn rounded-lg bg-blue-800 text-white py-3 px-20 shadow-lg" type="submit">Login</button>
             </div>
              </form>
              <div class="flex flex-col mx-w-sm items-center">
