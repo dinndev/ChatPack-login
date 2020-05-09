@@ -8,6 +8,10 @@
     src: url(../fonts/Mark\ Pro.ttf);
 }
 
+.inputs input:nth-child(2){
+    border: 1px solid #007BE9;
+}
+
 form input {
     font-family: "Mark Bold";
 }
@@ -26,10 +30,4 @@ i.fa-facebook-square{
 
 i.fa-google-plus-g{
    color: #db4a39;
-}
-
-.submitBtn {
-background: #FFFFFF;
-border: 1px solid #007BE9;
-
 }
