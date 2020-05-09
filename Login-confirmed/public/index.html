@@ -10,9 +10,9 @@
 </head>
 <body>
     <!-- grid -->
-     <div class="grid bg-no-repeat bg-left grid-cols-2 w-screen h-screen" style="background-image: url(../svg/layer.svg);">
+     <div class="grid bg-no-repeat bg-left grid-cols-1 w-screen h-screen sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2" style="background-image: url(../svg/layer.svg);">
          <!-- col 1 -->
-    <div class="flex justify-center h-screen col-span-1 h-12 items-center">
+    <div class="flex justify-center hidden h-screen col-span-1 h-12 items-center sm:hidden md:hidden lg:flex">
         <img class="w-10/12" src="../svg/Man.svg" alt="">
     </div>
     <!-- col 2 -->
@@ -20,7 +20,7 @@
              <!-- form-container -->
              <div class="h-full flex flex-col justify-center items-center">
                  <!-- form -->
-             <form class=" w-3/4 mx-w-lg p-10 relative flex flex-col justify-center">
+             <form class=" w-5/6 mx-w-lg flex flex-col justify-center sm:w-2/4 md:3/4 lg:w-4/6">
                 <div class="inputs flex w-full flex-col">
                     <label for="email"></label>
                 <input class="font-bold text-sm focus:outline-none focus:shadow-outline p-5 rounded-lg m-2" placeholder="Email Adress" name="email" type="email" required>
@@ -28,7 +28,7 @@
                  <input class="mt-4 font-bold text-sm focus:outline-none focus:shadow-outline outline-none p-5 rounded-lg m-2 shadow-lg" placeholder="Password" name="password" type="password" required>
                 </div>
                 <!-- checkbox -->
-                  <div class="mb-10 m-4 flex justify-between">
+                  <div class=" m-4 flex justify-between">
                  <label class="text-xs font-bold text-gray-600" for="checkbox">
                     <input class="checkbox" name="checkbox" type="checkbox"> 
                     <span>
@@ -38,7 +38,7 @@
                 </div>
                 <!-- Submit btn -->
                 <div class="flex justify-center">
-                <button class="focus:outline-none focus:shadow-outline submitBtn rounded-lg bg-blue-800 text-white py-3 px-20 shadow-lg" type="submit">Login</button>
+                <button class="mb-4 focus:outline-none focus:shadow-outline submitBtn rounded-lg bg-blue-800 text-white py-3 px-20 shadow-lg" type="submit">Login</button>
             </div>
              </form>
              <div class="flex flex-col mx-w-sm items-center">
